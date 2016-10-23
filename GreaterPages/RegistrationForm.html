@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="applocation/json;charset=UTF-8">
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<form name="registerForm" method="POST" action="register">
+		<table>
+			<thead>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Login info</legend>
+							<table>
+								<colgroup span="1" width="120">
+								</colgroup>
+								<tr>
+									<td><label for="userEmail">Email</label></td>
+									<td><input type="text" name="email" id="userEmail"></td>
+								</tr>
+								<tr>
+									<td><label for="userEmail">Password</label></td>
+									<td><input type="password" name="password" id="userPassword"></td>
+								</tr>
+							</table>
+						</fieldset>
+						<fieldset>
+							<legend>Personal info</legend>
+							<table>
+								<colgroup span="1" width="120">
+								</colgroup>
+								<tr>
+									<td><label for="userName">Full Name</label></td>
+									<td><input type="text" name="name" id="userName"></td>
+								</tr>
+								<tr>
+									<td><label for="userCountry">Country</label></td>
+									<td><input type="text" name="country" id="userCountry"></td>
+								</tr>
+								<tr>
+									<td><label for="userCountry">Phone Number</label></td>
+									<td><input type="text" name="phone" id="userPhone"></td>
+								</tr>
+							</table>
+						</fieldset>
+						<fieldset>
+							<legend>Addresses</legend>
+							<table>
+								<colgroup span="1" width="120">
+								</colgroup>
+								<tr>
+									<td><label for="userBillingAddress">Billing Address</label></td>
+									<td>
+										<textarea rows="4" cols="21" name="billingAddress" id="userBillingAddress"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="userShippingAddress">Shipping Address</label></td>
+									<td>
+										<textarea rows="4" cols="21" name="billingAddress" id="userShippingAddress"></textarea>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Submitting registration form</legend>
+							<input type="submit" value="Register">
+						</fieldset>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+
+</html>
