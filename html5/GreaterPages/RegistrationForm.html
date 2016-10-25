@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<form name="registerForm" method="POST" action="register" style="width:15%">
+		<fieldset>
+			<legend>Login info</legend>
+
+			<label for="userEmail">Email</label><br/>
+			<input type="email" name="email" id="userEmail" required autofocus><br/>
+			
+			<label for="userEmail">Password</label><br/>
+			<input type="password" name="password" id="userPassword" required>
+		</fieldset>
+		<fieldset>
+			<legend>Personal info</legend>
+			
+			<label for="userName">Full Name</label><br/>
+			<input type="text" name="name" id="userName" required><br/>
+
+			<label for="userBirthday">Birthday</label><br/>
+			<input type="date" name="birthday" id="userBirthday" required><br/>
+
+			<label for="userCountry">Country</label><br/>
+			<select name="country" id="userCountry">
+				<option value="poland">Poland</option>
+				<option value="poland">Austria</option>
+				<option value="poland">Ukraine</option>
+				<option value="poland">France</option>
+			</select><br/>
+			
+			<label for="userCountry">Phone Number</label><br/>
+			<input type="text" name="phone" id="userPhone" required>
+		</fieldset>
+		<fieldset>
+			<legend>Addresses</legend>
+
+			<label for="userBillingAddress">Billing Address</label><br/>
+			<textarea rows="4" cols="21" name="billingAddress" id="userBillingAddress" required></textarea><br/>
+			
+			<label for="userShippingAddress">Shipping Address</label><br/>
+			<textarea rows="4" cols="21" name="billingAddress" id="userShippingAddress"></textarea><br/>
+		</fieldset>
+		<input type="submit" value="Register">
+	</form>
+</body>
+
+</html>

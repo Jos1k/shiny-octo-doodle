@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Login Form</title>
+</head>
+
+<body>
+	<form name="login" method="post" action="login">
+		<table>
+			<caption>Sign In</caption>
+			<tr>
+				<td>
+					<fieldset>
+						<legend>Login info</legend>
+						<label for="userEmail">Email</label><br>
+						<input type="email" name="userEmail" id="userEmail" tabindex="1" maxlength="25" required placeholder="Please write your email"
+							autofocus><br>
+						<label for="userPassword">Password</label><br>
+						<input type="password" name="userPassword" id="userPassword" tabindex="2" maxlength="25" required placeholder="Please write your password"><br>
+					</fieldset>
+					<fieldset>
+						<legend>
+							Submit login form
+						</legend>
+						<input type="submit" value="Submit" tabindex="3">
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
